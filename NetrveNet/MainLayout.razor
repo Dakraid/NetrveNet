@@ -1,0 +1,12 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>Netrve.NET</PageTitle>
+
+<ErrorBoundary>
+    <ChildContent>
+        @Body
+    </ChildContent>
+    <ErrorContent Context="ex">
+        <p class="error">@ex.Message</p>
+    </ErrorContent>
+</ErrorBoundary>
